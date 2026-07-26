@@ -1,0 +1,28 @@
+cat > _layouts/post.html <<'EOF'
+---
+layout: default
+---
+
+<article>
+
+  <h1>{{ page.title }}</h1>
+
+  <p class="post-meta">
+    Published: {{ page.date | date: "%B %d, %Y" }}
+
+    {% if page.topic %}
+      <br>
+      Subject: {{ page.topic }}
+    {% endif %}
+  </p>
+
+  {{ content }}
+
+  <hr>
+
+  <p>
+    <a href="{{ '/' | relative_url }}">Return to homepage</a>
+  </p>
+
+</article>
+EOF
