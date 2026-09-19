@@ -323,3 +323,70 @@ footer {
     padding: 4px;
   }
 }
+
+/* Books */
+
+.book-list {
+  margin: 24px 0;
+}
+
+.book {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+
+  padding: 16px;
+
+  border: 1px solid #666;
+  background: #d4d4d4;
+}
+
+.book-cover {
+  flex: 0 0 180px;
+}
+
+.book-cover img {
+  display: block;
+
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+
+  border: 1px solid #333;
+}
+
+.book-details {
+  flex: 1;
+}
+
+.book-details h2 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.book-author {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+/* Books — mobile */
+
+@media (max-width: 600px) {
+
+  .book {
+    display: block;
+  }
+
+  .book-cover {
+    margin-bottom: 16px;
+  }
+
+  .book-cover img {
+    width: 160px;
+  }
+
+}
